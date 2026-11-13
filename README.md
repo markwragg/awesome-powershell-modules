@@ -51,7 +51,7 @@ Install any module below with `Install-Module <Name>` (PowerShellGet) or `Instal
 
 ## Build & Automation
 
-- [BuildHelpers](https://github.com/PowerShellOrg/BuildHelpers#readme) - Provides helper functions for PowerShell CI/CD pipelines.
+- [BuildHelpers](https://github.com/PowerShellOrg/BuildHelpers#readme) - Normalizes CI/CD environment variables across build systems, and provides helpers for project detection, manifest updates, and version bumping.
 - [Catesta](https://github.com/techthoughts2/Catesta#readme) - Scaffolds PowerShell module projects with CI/CD pipelines for multiple platforms.
 - [InvokeBuild](https://github.com/nightroman/Invoke-Build#readme) - Build and test automation tool with a task-based scripting model.
 - [ModuleBuilder](https://github.com/PoshCode/ModuleBuilder#readme) - Compiles multiple source files into a single PowerShell module for distribution.
@@ -94,7 +94,7 @@ Install any module below with `Install-Module <Name>` (PowerShellGet) or `Instal
 - [HAWK](https://github.com/T0pCyber/hawk#readme) - Gathers forensic data for investigating Microsoft 365 account compromises.
 - [JEAnalyzer](https://github.com/PSSecTools/JEAnalyzer#readme) - Converts scripts and script blocks into Just Enough Administration role capability files.
 - [Locksmith](https://github.com/jakehildreth/Locksmith#readme) - Finds and fixes common misconfigurations in Active Directory Certificate Services.
-- [Maester](https://github.com/maester365/maester#readme) - Test automation framework for monitoring Microsoft security configuration.
+- [Maester](https://github.com/maester365/maester#readme) - Test automation framework for monitoring Microsoft 365 tenant security configuration.
 - [Microsoft.PowerShell.SecretManagement](https://github.com/PowerShell/SecretManagement#readme) - Provides a consistent interface for storing and retrieving secrets across different vaults.
 - [Microsoft.PowerShell.SecretStore](https://github.com/PowerShell/SecretStore#readme) - Local, encrypted secret vault extension for SecretManagement.
 - [Obol](https://github.com/jborean93/PowerShell-Obol#readme) - Runs an in-process Kerberos KDC, based on Kerberos.NET, for testing Kerberos clients and services without a domain controller.
@@ -125,7 +125,7 @@ Install any module below with `Install-Module <Name>` (PowerShellGet) or `Instal
 - [PSFzf](https://github.com/kelleyma49/PSFzf#readme) - Integrates the [fzf](https://github.com/junegunn/fzf) fuzzy finder with command history and tab completion.
 - [PSPreworkout](https://github.com/samerde/PSPreWorkout#readme) - Collection of tools for warming up and customizing a PowerShell session.
 - [PSReadLine](https://github.com/PowerShell/PSReadLine#readme) - Provides syntax highlighting, history search, and improved command-line editing.
-- [PSScriptTools](https://github.com/jdhitsolutions/PSScriptTools#readme) - Collection of functions to enhance your own PowerShell scripts and console work.
+- [PSScriptTools](https://github.com/jdhitsolutions/PSScriptTools#readme) - Provides utility functions for benchmarking code, visualizing process trees, and querying CIM/WMI classes, among other everyday scripting and console tasks.
 - [PSTui](https://github.com/tui-cs/PSTui#readme) - Adds console-based grid view and list selection cmdlets such as `Out-ConsoleGridView`.
 - [PSUtil](https://github.com/PowershellFrameworkCollective/PSUtil#readme) - Provides short aliases, keybindings, and pipeline helper functions that cut down typing in everyday console use.
 - [PSZoxide](https://github.com/InfiniteRoomLabs/PSZoxide#readme) - Pure PowerShell clone of zoxide that learns your most-used directories and provides `z` and `zi` navigation without the zoxide binary.
@@ -212,8 +212,8 @@ Install any module below with `Install-Module <Name>` (PowerShellGet) or `Instal
 - [PSOpenAI](https://github.com/mkht/PSOpenAI#readme) - Wraps the OpenAI API for use in PowerShell scripts.
 - [PSPushover](https://github.com/joshooaj/PSPushover#readme) - Sends push notifications through the [Pushover](https://pushover.net/) service.
 - [PSTeams](https://github.com/EvotecIT/PSTeams#readme) - Sends formatted adaptive card messages to Microsoft Teams channels.
-- [ServiceNow](https://github.com/Snow-Shell/servicenow-powershell#readme) - Automates ServiceNow service and asset management.
-- [TOPdeskPS](https://github.com/AndrewPla/TOPdeskPS/tree/master#readme) - Interacts with the TOPdesk IT service management API.
+- [ServiceNow](https://github.com/Snow-Shell/servicenow-powershell#readme) - Creates, queries, and updates ServiceNow records such as incidents, change requests, and CMDB items, with support for attachments and the Service Catalog.
+- [TOPdeskPS](https://github.com/AndrewPla/TOPdeskPS/tree/master#readme) - Creates and updates TOPdesk incidents and persons, and queries operators and branches, via the TOPdesk REST API.
 - [WizCloud](https://github.com/EvotecIT/WizCloud#readme) - Queries cloud security data such as users, projects, and cloud accounts from the Wiz.io API.
 - [VSTeam](https://github.com/MethodsAndPractices/vsteam#readme) - Wraps the Azure DevOps API for use in PowerShell scripts.
 
@@ -252,7 +252,7 @@ Install any module below with `Install-Module <Name>` (PowerShellGet) or `Instal
 - [obs-powershell](https://github.com/StartAutomating/obs-powershell#readme) - Scripts Open Broadcaster Software (OBS) Studio via its WebSocket API.
 - [PowerBGInfo](https://github.com/EvotecIT/PowerBGInfo#readme) - Generates desktop wallpapers and lock screens displaying system information and status metrics.
 - [PSBluesky](https://github.com/jdhitsolutions/PSBluesky#readme) - Posts, views, and manages your feed and timeline on Bluesky.
-- [PSCalendar](https://github.com/jdhitsolutions/PSCalendar#readme) - Displays calendars in the console.
+- [PSCalendar](https://github.com/jdhitsolutions/PSCalendar#readme) - Displays month, quarter, or ncal-style calendars in the console or a WPF GUI, with support for highlighting specific dates.
 - [PSCommander](https://github.com/ironmansoftware/pscommander#readme) - Wires up desktop integrations such as hotkeys, tray icons, and scheduled tasks to PowerShell script blocks.
 - [PSLedger](https://github.com/hansEricG/PSLedger#readme) - Command-line double-entry bookkeeping system backed by plain text files.
 - [PSTimers](https://github.com/jdhitsolutions/pstimers#readme) - Provides timer, countdown, and stopwatch functions for PowerShell scripts and console use.
