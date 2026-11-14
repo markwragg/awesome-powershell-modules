@@ -6,7 +6,6 @@ on:
 permissions:
   contents: write
   pull-requests: write
-  id-token: write
 jobs:
   find-new-modules:
     runs-on: ubuntu-latest
@@ -40,6 +39,7 @@ jobs:
 
           $results | ConvertTo-Json -Depth 4 | Out-File -FilePath candidates.json -Encoding utf8
           "has_results=true" >> $env:GITHUB_OUTPUT
+
       - name: Review candidates with Claude and open a PR
         if: steps.find.outputs.has_results == 'true'
         uses: anthropics/claude-code-action@v1
