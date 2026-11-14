@@ -1,23 +1,41 @@
+#Requires -Version 7.0
 <#
 .SYNOPSIS
     Lists the distinct PowerShell Gallery authors across README.md and how many modules each has on the list.
 .PARAMETER Path
     Path to the README.md file to parse.
+.PARAMETER ThrottleLimit
+    Maximum number of concurrent PowerShell Gallery lookups.
 .EXAMPLE
     ./Get-ModuleAuthor.ps1 | Format-Table
 #>
 [CmdletBinding()]
 param(
-    [string]$Path = (Join-Path $PSScriptRoot '..' 'README.md')
+    [string]$Path = (Join-Path $PSScriptRoot '..' 'README.md'),
+    [int]$ThrottleLimit = 10
 )
 
 $content = Get-Content -Path $Path -Raw
 $entryPattern = '(?m)^- \[(?<Name>[^\]]+)\]\((?<Url>[^)]+)\) - .+$'
 $entryMatches = [regex]::Matches($content, $entryPattern)
 
-$authors = foreach ($entryMatch in $entryMatches) {
-    $name = $entryMatch.Groups['Name'].Value
-    $url = $entryMatch.Groups['Url'].Value
+$authors = $entryMatches | ForEach-Object -ThrottleLimit $ThrottleLimit -Parallel {
+    function Find-GalleryPackage {
+        param([string]$Id)
+        $escapedId = $Id -replace "'", "''"
+        $filter = "Id eq '$escapedId' and IsLatestVersion eq true"
+        $query = "%24filter=$([uri]::EscapeDataString($filter))&%24top=1"
+        $uri = "https://www.powershellgallery.com/api/v2/Packages()?$query"
+        try {
+            Invoke-RestMethod -Uri $uri -Headers @{Accept = 'application/atom+xml' } -ErrorAction Stop
+        }
+        catch {
+            $null
+        }
+    }
+
+    $name = $_.Groups['Name'].Value
+    $url = $_.Groups['Url'].Value
 
     $candidates = [System.Collections.Generic.List[string]]::new()
     if ($url -match 'powershellgallery\.com/packages/(?<Id>[^/?#]+)') {
@@ -29,16 +47,11 @@ $authors = foreach ($entryMatch in $entryMatches) {
 
     $found = $null
     foreach ($candidate in $candidates) {
-        try {
-            $found = Find-Module -Name $candidate -ErrorAction Stop | Select-Object -First 1
-            if ($found) { break }
-        }
-        catch {
-            continue
-        }
+        $found = Find-GalleryPackage -Id $candidate
+        if ($found) { break }
     }
 
-    if ($found) { $found.Author } else { 'Not found' }
+    if ($found) { $found.properties.Authors } else { 'Not found' }
 }
 
 $authors |
