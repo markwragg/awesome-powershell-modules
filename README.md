@@ -69,6 +69,7 @@ Install any module below with `Install-Module <Name>` (PowerShellGet) or `Instal
 ## Development Tools
 
 - [ClassExplorer](https://github.com/SeeminglyScience/ClassExplorer#readme) - Searches loaded .NET assemblies for types and members matching a query.
+- [ClaudeUsage](https://github.com/backmind/ClaudeUsage#readme) - Queries Claude Code usage limits, including the 5-hour, 7-day, and Opus windows, from the terminal.
 - [ConsoleMonster](https://github.com/EvotecIT/ConsoleMonster#readme) - Renders tables, trees, and panels in the console with no external dependencies.
 - [EZOut](https://github.com/StartAutomating/EZOut#readme) - Generates PowerShell format and types XML files from PowerShell, instead of hand-writing them, and can build them via a GitHub Action.
 - [Graphical](https://github.com/PrateekKumarSingh/graphical#readme) - Plots scatter, bar, and line graphs directly in the console.
