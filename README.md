@@ -27,6 +27,7 @@ Install any module below with `Install-Module <Name>` (PowerShellGet) or `Instal
 - [Windows Administration](#windows-administration)
 - [Networking](#networking)
 - [Web Servers & APIs](#web-servers--apis)
+- [AI & LLM Tools](#ai--llm-tools)
 - [SaaS Integrations](#saas-integrations)
 - [Reporting & Data Conversion](#reporting--data-conversion)
 - [Parallelization](#parallelization)
@@ -69,7 +70,6 @@ Install any module below with `Install-Module <Name>` (PowerShellGet) or `Instal
 ## Development Tools
 
 - [ClassExplorer](https://github.com/SeeminglyScience/ClassExplorer#readme) - Searches loaded .NET assemblies for types and members matching a query.
-- [ClaudeUsage](https://github.com/backmind/ClaudeUsage#readme) - Queries Claude Code usage limits, including the 5-hour, 7-day, and Opus windows, from the terminal.
 - [ConsoleMonster](https://github.com/EvotecIT/ConsoleMonster#readme) - Renders tables, trees, and panels in the console with no external dependencies.
 - [EZOut](https://github.com/StartAutomating/EZOut#readme) - Generates PowerShell format and types XML files from PowerShell, instead of hand-writing them, and can build them via a GitHub Action.
 - [Graphical](https://github.com/PrateekKumarSingh/graphical#readme) - Plots scatter, bar, and line graphs directly in the console.
@@ -199,6 +199,14 @@ Install any module below with `Install-Module <Name>` (PowerShellGet) or `Instal
 - [Pode](https://github.com/Badgerati/Pode/tree/master#readme) - Cross-platform framework for building web servers, REST APIs, and SMTP/TCP servers.
 - [Pode.Web](https://github.com/Badgerati/Pode.Web/tree/master#readme) - Web template framework for building front-ends on top of Pode.
 
+## AI & LLM Tools
+
+- [ClaudeUsage](https://github.com/backmind/ClaudeUsage#readme) - Queries Claude Code usage limits, including the 5-hour, 7-day, and Opus windows, from the terminal.
+- [PSAI](https://github.com/dfinke/PSAI#readme) - Framework for building and orchestrating multi-agent AI systems in PowerShell.
+- [PSAISuite](https://github.com/dfinke/psaisuite#readme) - Standardized abstraction layer for calling 15+ GenAI providers from PowerShell.
+- [PSClaudeCode](https://github.com/dfinke/PSClaudeCode#readme) - PowerShell implementation of the Claude Code agent loop, including tools and permissions.
+- [PSOpenAI](https://github.com/mkht/PSOpenAI#readme) - Wraps the OpenAI API for use in PowerShell scripts.
+
 ## SaaS Integrations
 
 - [ADOPS](https://github.com/AZDOPS/AZDOPS#readme) - Manages Azure DevOps projects, pipelines, and work items using OAuth instead of personal access tokens.
@@ -208,9 +216,6 @@ Install any module below with `Install-Module <Name>` (PowerShellGet) or `Instal
 - [Mailozaurr](https://github.com/EvotecIT/Mailozaurr#readme) - Sends and receives email over SMTP, IMAP, and POP3.
 - [PoshBot](https://github.com/poshbotio/PoshBot#readme) - ChatOps bot framework for building chat bots in Slack, Microsoft Teams, and Discord.
 - [PowerTrello](https://github.com/adbertram/PowerTrello#readme) - Manages Trello boards, lists, and cards via the Trello API.
-- [PSAI](https://github.com/dfinke/PSAI#readme) - Framework for building and orchestrating multi-agent AI systems in PowerShell.
-- [PSAISuite](https://github.com/dfinke/psaisuite#readme) - Standardized abstraction layer for calling 15+ GenAI providers from PowerShell.
-- [PSOpenAI](https://github.com/mkht/PSOpenAI#readme) - Wraps the OpenAI API for use in PowerShell scripts.
 - [PSPushover](https://github.com/joshooaj/PSPushover#readme) - Sends push notifications through the [Pushover](https://pushover.net/) service.
 - [PSTeams](https://github.com/EvotecIT/PSTeams#readme) - Sends formatted adaptive card messages to Microsoft Teams channels.
 - [ServiceNow](https://github.com/Snow-Shell/servicenow-powershell#readme) - Creates, queries, and updates ServiceNow records such as incidents, change requests, and CMDB items, with support for attachments and the Service Catalog.
@@ -261,7 +266,6 @@ Install any module below with `Install-Module <Name>` (PowerShellGet) or `Instal
 
 ## Learning
 
-- [PSClaudeCode](https://github.com/dfinke/PSClaudeCode#readme) - PowerShell implementation of the Claude Code agent loop, including tools and permissions.
 - [PSKoans](https://github.com/PowerShellOrg/PSKoans#readme) - Teaches the PowerShell language through a series of Pester-based coding exercises.
 - [Tiny-PowerShell-Projects](https://github.com/dfinke/Tiny-PowerShell-Projects#readme) - Teaches PowerShell through test-driven development of small games and puzzles.
 - [tiPS](https://github.com/deadlydog/PowerShell.tiPS#readme) - Delivers PowerShell tips and tricks directly to your terminal on a schedule.
