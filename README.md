@@ -117,6 +117,7 @@ Install any module below with `Install-Module <Name>` (PowerShellGet) or `Instal
 - [PSEventViewer](https://github.com/EvotecIT/EventViewerX#readme) - Queries, monitors, and reports on Windows Event Log data for security and Active Directory investigations.
 - [PSFramework](https://github.com/PowershellFrameworkCollective/PSFramework/tree/master#readme) - Configuration, logging, and runtime framework for building robust PowerShell tooling.
 - [PSProfiler](https://github.com/IISResetMe/PSProfiler#readme) - Measures the execution time of individual statements within a script.
+- [RemoteWrench](https://github.com/jborean93/PowerShell-RemoteWrench#readme) - Parses and displays PowerShell Remoting Protocol (PSRP) packets from session logs as timelines or grouped detail.
 
 ## Shell Experience
 
@@ -272,6 +273,7 @@ Install any module below with `Install-Module <Name>` (PowerShellGet) or `Instal
 
 ## Fun & Novelty
 
+- [Minecraft](https://github.com/markwragg/Powershell-Minecraft#readme) - Converts Minecraft coordinates, experience, and game ticks, and detects slime chunks.
 - [PSPodcast](https://github.com/jdhitsolutions/PSPodcast#readme) - Gets and displays episode information for The PowerShell Podcast.
 - [pwshPlaces](https://github.com/techthoughts2/PwshPlaces#readme) - Searches for places and points of interest around the globe.
 - [XKCD](https://github.com/markwragg/Powershell-XKCD#readme) - Fetches, searches, and displays comics from the XKCD webcomic.
