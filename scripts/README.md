@@ -66,3 +66,19 @@ F5-LTM                         08/10/2026 02:18:30    459178 https://github.com/
 PoSh.FluidTemplateEngine       07/10/2026 22:17:08        83 https://github.com/jul-m/PoSh.FluidTemplateEngine
 ...
 ```
+## Invoke-CandidateScan
+
+Downloads each candidate module from a `Find-NewGalleryModules` JSON export with `Save-PSResource` and statically analyses it without importing or running it: PSScriptAnalyzer (with explicit settings, so a package can't supply its own rules), regex checks for download cradles, encoded commands, base64 blobs, AV/AMSI tampering and persistence, manifest settings that run code on import, and bundled binaries. Used by the New Modules Check workflow ahead of the AI review.
+
+```powershell
+.\Find-NewGalleryModules.ps1 | ConvertTo-Json | Out-File candidates.json
+.\Invoke-CandidateScan.ps1 -CandidatesPath candidates.json -DownloadPath scan -OutputPath analysis.json
+```
+
+## Add-ReviewedModules
+
+Validates the AI review's JSON output and applies it to README.md: only real candidates can be added (name and URL come from the candidates file), the category must be an existing one, descriptions must be plain single-line text, and anything unscanned or failing security review is blocked. Writes a markdown report used as the PR body. Used by the New Modules Check workflow's write job.
+
+```powershell
+.\Add-ReviewedModules.ps1 -CandidatesPath candidates.json -AnalysisPath analysis.json -ReviewPath review.json -BodyPath report.md
+```
