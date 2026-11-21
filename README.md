@@ -45,6 +45,7 @@ Install any module below with `Install-Module <Name>` (PowerShellGet) or `Instal
 
 ## Testing & Code Quality
 
+- [M365DeprecationScanner](https://github.com/matejpaunovski/M365DeprecationScanner#readme) - Finds deprecated and retired Microsoft 365, Entra ID, and Azure PowerShell commands in scripts and suggests replacements, as a command, PSScriptAnalyzer rule, or GitHub Action.
 - [Pester](https://github.com/pester/Pester#readme) - BDD (Behaviour-Driven Development)-style test and mocking framework. Pester is the most widely used testing framework for PowerShell.
 - [PSRule](https://github.com/microsoft/PSRule#readme) - Validates infrastructure as code and objects against PowerShell-defined rules.
 - [PSScriptAnalyzer](https://github.com/PowerShell/PSScriptAnalyzer#readme) - Static analysis tool that checks PowerShell code against a set of best-practice rules.
@@ -66,6 +67,7 @@ Install any module below with `Install-Module <Name>` (PowerShellGet) or `Instal
 
 - [platyPS](https://github.com/PowerShell/platyPS#readme) - Generates external help files and Markdown documentation from comment-based help.
 - [PSDocs.Azure](https://github.com/Azure/PSDocs.Azure#readme) - Generates documentation from Azure infrastructure as code (IaC) artifacts.
+- [PSModuleDocGen](https://github.com/ollie-galbraith/PSModuleDocGen#readme) - Generates Markdown documentation for modules and functions from comment-based help and parameter metadata, including per-function pages and an index.
 
 ## Development Tools
 
@@ -75,6 +77,7 @@ Install any module below with `Install-Module <Name>` (PowerShellGet) or `Instal
 - [Graphical](https://github.com/PrateekKumarSingh/graphical#readme) - Plots scatter, bar, and line graphs directly in the console.
 - [Irregular](https://github.com/StartAutomating/Irregular#readme) - Provides a library of named, documented regular expression patterns, and helpers for building your own.
 - [PoshColor](https://github.com/JustABearOz/PoshColor#readme) - Colorizes the output of common commands with support for custom themes.
+- [PSDynamicParameters](https://github.com/ollie-galbraith/PSDynamicParameters#readme) - Provides Add-DynamicParameter, a helper for defining runtime parameters in advanced functions for use in a DynamicParam block.
 - [psedit](https://github.com/ironmansoftware/psedit#readme) - Terminal-based text editor for PowerShell, including syntax highlighting for PowerShell, JSON, YAML, XML and Markdown.
 - [PSGalleryExplorer](https://github.com/techthoughts2/PSGalleryExplorer#readme) - Searches, explores, and discovers modules on the PowerShell Gallery.
 - [ps-menu](https://github.com/chrisseroka/ps-menu#readme) - Renders simple interactive menus in the console.
@@ -121,6 +124,7 @@ Install any module below with `Install-Module <Name>` (PowerShellGet) or `Instal
 
 ## Shell Experience
 
+- [Napreth.PSDirEnv](https://www.powershellgallery.com/packages/Napreth.PSDirEnv) - Loads directory-scoped environments, variables, functions, and aliases from .ps.envrc files.
 - [oh-my-posh](https://github.com/JanDeDobbeleer/oh-my-posh#readme) - Installs and manages the oh-my-posh cross-shell prompt theme engine, which renders prompts using its own compiled binary rather than PowerShell code.
 - [posh-git](https://github.com/dahlbyk/posh-git#readme) - Integrates Git status and tab completion into the PowerShell prompt.
 - [PowerShellRun](https://github.com/mdgrs-mei/PowerShellRun#readme) - Terminal-based launcher and fuzzy finder for PowerShell.
@@ -160,6 +164,7 @@ Install any module below with `Install-Module <Name>` (PowerShellGet) or `Instal
 - [Microsoft.Graph](https://github.com/microsoftgraph/msgraph-sdk-powershell#readme) - Official Microsoft Graph SDK for PowerShell, covering Entra ID, Teams, SharePoint, and more.
 - [Microsoft365DSC](https://github.com/Microsoft365DSC/Microsoft365DSC#readme) - Manages, configures, extracts, and monitors Microsoft 365 tenant configurations.
 - [PnP.PowerShell](https://github.com/pnp/powershell/tree/main#readme) - Manages SharePoint Online and Microsoft 365 through PnP cmdlets.
+- [PVEPS](https://github.com/knightmare2600/PVEPS#readme) - Manages Proxmox VE through its REST API, in the style of VMware PowerCLI.
 - [VCF.PowerCLI](https://www.powershellgallery.com/packages/VCF.PowerCLI) - Automates vSphere, vSAN, and NSX administration tasks.
 
 ## Windows Administration
@@ -217,6 +222,7 @@ Install any module below with `Install-Module <Name>` (PowerShellGet) or `Instal
 - [Mailozaurr](https://github.com/EvotecIT/Mailozaurr#readme) - Sends and receives email over SMTP, IMAP, and POP3.
 - [PoshBot](https://github.com/poshbotio/PoshBot#readme) - ChatOps bot framework for building chat bots in Slack, Microsoft Teams, and Discord.
 - [PowerTrello](https://github.com/adbertram/PowerTrello#readme) - Manages Trello boards, lists, and cards via the Trello API.
+- [PSLinear](https://github.com/stian3555/PSLinear#readme) - Unofficial client for the Linear GraphQL API covering issues, projects, initiatives, documents, and cycles, with browser OAuth sign-in and automatic paging.
 - [PSPushover](https://github.com/joshooaj/PSPushover#readme) - Sends push notifications through the [Pushover](https://pushover.net/) service.
 - [PSTeams](https://github.com/EvotecIT/PSTeams#readme) - Sends formatted adaptive card messages to Microsoft Teams channels.
 - [ServiceNow](https://github.com/Snow-Shell/servicenow-powershell#readme) - Creates, queries, and updates ServiceNow records such as incidents, change requests, and CMDB items, with support for attachments and the Service Catalog.
