@@ -156,6 +156,7 @@ Install any module below with `Install-Module <Name>` (PowerShellGet) or `Instal
 - [AzAuth](https://github.com/PalmEmanuel/AzAuth#readme) - Handles Azure authentication and token acquisition for PowerShell scripts and modules.
 - [AzCostTools](https://github.com/markwragg/PowerShell-AzCostTools#readme) - Provides cmdlets for analyzing and reporting on Azure cost data.
 - [azswap](https://github.com/JoePittsy/azswap#readme) - Isolates Azure CLI profiles per tenant identity, so each shell keeps its own subscription context instead of sharing one globally.
+- [Azure.Admin.Console](https://github.com/ChendrayanV/Azure.Admin.Console#readme) - Assesses and reports on Azure, Microsoft 365 and Azure DevOps over plain REST, without the Az or Microsoft.Graph modules.
 - [AzViz](https://github.com/PrateekKumarSingh/AzViz#readme) - Generates visual topology diagrams of Azure resource groups.
 - [Bicep](https://github.com/PSBicep/PSBicep#readme) - Compiles, decompiles, and manages Bicep Azure infrastructure-as-code files.
 - [Corsinvest.ProxmoxVE.Api](https://github.com/Corsinvest/cv4pve-api-powershell#readme) - Manages Proxmox VE virtualization hosts, VMs, and containers via the Proxmox REST API.
