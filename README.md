@@ -67,7 +67,6 @@ Install any module below with `Install-Module <Name>` (PowerShellGet) or `Instal
 
 - [platyPS](https://github.com/PowerShell/platyPS#readme) - Generates external help files and Markdown documentation from comment-based help.
 - [PSDocs.Azure](https://github.com/Azure/PSDocs.Azure#readme) - Generates documentation from Azure infrastructure as code (IaC) artifacts.
-- [PSModuleDocGen](https://github.com/ollie-galbraith/PSModuleDocGen#readme) - Generates Markdown documentation for modules and functions from comment-based help and parameter metadata, including per-function pages and an index.
 
 ## Development Tools
 
@@ -77,7 +76,6 @@ Install any module below with `Install-Module <Name>` (PowerShellGet) or `Instal
 - [Graphical](https://github.com/PrateekKumarSingh/graphical#readme) - Plots scatter, bar, and line graphs directly in the console.
 - [Irregular](https://github.com/StartAutomating/Irregular#readme) - Provides a library of named, documented regular expression patterns, and helpers for building your own.
 - [PoshColor](https://github.com/JustABearOz/PoshColor#readme) - Colorizes the output of common commands with support for custom themes.
-- [PSDynamicParameters](https://github.com/ollie-galbraith/PSDynamicParameters#readme) - Provides Add-DynamicParameter, a helper for defining runtime parameters in advanced functions for use in a DynamicParam block.
 - [psedit](https://github.com/ironmansoftware/psedit#readme) - Terminal-based text editor for PowerShell, including syntax highlighting for PowerShell, JSON, YAML, XML and Markdown.
 - [PSGalleryExplorer](https://github.com/techthoughts2/PSGalleryExplorer#readme) - Searches, explores, and discovers modules on the PowerShell Gallery.
 - [ps-menu](https://github.com/chrisseroka/ps-menu#readme) - Renders simple interactive menus in the console.
@@ -124,7 +122,6 @@ Install any module below with `Install-Module <Name>` (PowerShellGet) or `Instal
 
 ## Shell Experience
 
-- [Napreth.PSDirEnv](https://www.powershellgallery.com/packages/Napreth.PSDirEnv) - Loads directory-scoped environments, variables, functions, and aliases from .ps.envrc files.
 - [oh-my-posh](https://github.com/JanDeDobbeleer/oh-my-posh#readme) - Installs and manages the oh-my-posh cross-shell prompt theme engine, which renders prompts using its own compiled binary rather than PowerShell code.
 - [posh-git](https://github.com/dahlbyk/posh-git#readme) - Integrates Git status and tab completion into the PowerShell prompt.
 - [PowerShellRun](https://github.com/mdgrs-mei/PowerShellRun#readme) - Terminal-based launcher and fuzzy finder for PowerShell.
