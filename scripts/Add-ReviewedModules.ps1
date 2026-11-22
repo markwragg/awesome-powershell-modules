@@ -112,6 +112,10 @@ function Get-ReadmeUrl {
 }
 
 $candidates = @(Get-Content -Path $CandidatesPath -Raw | ConvertFrom-Json)
+
+# Names are written into README.md and the PR body, so re-check them here rather than relying on the scan job.
+$invalidNameCount = @($candidates | Where-Object { $_.Name -notmatch '^[A-Za-z0-9._-]+$' }).Count
+$candidates = @($candidates | Where-Object { $_.Name -match '^[A-Za-z0-9._-]+$' })
 $analysis = @(Get-Content -Path $AnalysisPath -Raw | ConvertFrom-Json)
 $review = Get-Content -Path $ReviewPath -Raw | ConvertFrom-Json
 $readme = [System.Collections.Generic.List[string]](Get-Content -Path $ReadmePath)
@@ -219,6 +223,11 @@ foreach ($section in @(@{ Title = 'Added'; Items = $added }, @{ Title = 'Not add
 if ($unexpected) {
     [void]$body.AppendLine('### Ignored review output').AppendLine()
     [void]$body.AppendLine("The review returned entries for modules that weren't candidates: $(ConvertTo-SafeText ($unexpected -join ', ') 300)")
+    [void]$body.AppendLine()
+}
+if ($invalidNameCount) {
+    [void]$body.AppendLine('### Ignored candidates').AppendLine()
+    [void]$body.AppendLine("$invalidNameCount candidate(s) had a name with unexpected characters and were skipped.")
     [void]$body.AppendLine()
 }
 [void]$body.AppendLine('---').AppendLine()
