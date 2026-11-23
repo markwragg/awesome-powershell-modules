@@ -103,6 +103,7 @@ Install any module below with `Install-Module <Name>` (PowerShellGet) or `Instal
 - [OpenAuthenticode](https://github.com/jborean93/PowerShell-OpenAuthenticode#readme) - Cross-platform implementation of Authenticode for code signing and verification.
 - [PowerSTIG](https://github.com/microsoft/PowerStig#readme) - Applies and audits DISA Security Technical Implementation Guide (STIG) settings using Desired State Configuration.
 - [PSAuthClient](https://github.com/alflokken/PSAuthClient#readme) - Performs OAuth2.0 and OpenID Connect (OIDC) authentication flows, including JWT decoding and signature validation.
+- [psPAS](https://github.com/pspete/psPAS#readme) - Manages accounts, safes, users, and sessions through the Idira (CyberArk) Privileged Access Security REST API.
 - [PSPGP](https://github.com/EvotecIT/PSPGP#readme) - Encrypts, decrypts, signs, and verifies files and strings using [PGP (Pretty Good Privacy)](https://en.wikipedia.org/wiki/Pretty_Good_Privacy).
 - [PSSecretScanner](https://github.com/bjompen/PSSecretScanner#readme) - Scans repositories for accidentally exposed secrets.
 - [SecretManagement.DpapiNG](https://github.com/jborean93/SecretManagement.DpapiNG#readme) - SecretManagement vault extension that protects secrets using Windows DPAPI-NG.
