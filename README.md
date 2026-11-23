@@ -91,6 +91,7 @@ Install any module below with `Install-Module <Name>` (PowerShellGet) or `Instal
 
 - [ADSec](https://github.com/PSSecTools/ADSec#readme) - Manages Active Directory delegation and privilege revocation, and monitors AD objects for security-relevant configuration changes.
 - [AzureADAssessment](https://github.com/AzureAD/AzureADAssessment#readme) - Assesses the configuration and security posture of an Azure AD tenant.
+- [Deetz](https://github.com/pspete/Deetz#readme) - Enumerates Tier Zero accounts and groups in Active Directory, by group membership and ACL analysis, to check privileged access management coverage.
 - [EDCA](https://github.com/michelderooij/EDCA#readme) - Assesses Exchange Server deployment configuration and compliance.
 - [ESCalator](https://github.com/jakehildreth/ESCalator#readme) - Identifies and abuses AD CS ESC issue combinations that may not be readily obvious.
 - [HAWK](https://github.com/T0pCyber/hawk#readme) - Gathers forensic data for investigating Microsoft 365 account compromises.
@@ -122,6 +123,7 @@ Install any module below with `Install-Module <Name>` (PowerShellGet) or `Instal
 
 ## Shell Experience
 
+- [Napreth.PSDirEnv](https://www.powershellgallery.com/packages/Napreth.PSDirEnv) - Loads directory-scoped environment variables, functions and aliases from approved .ps.envrc files as you change directory, and unloads them when you leave.
 - [oh-my-posh](https://github.com/JanDeDobbeleer/oh-my-posh#readme) - Installs and manages the oh-my-posh cross-shell prompt theme engine, which renders prompts using its own compiled binary rather than PowerShell code.
 - [posh-git](https://github.com/dahlbyk/posh-git#readme) - Integrates Git status and tab completion into the PowerShell prompt.
 - [PowerShellRun](https://github.com/mdgrs-mei/PowerShellRun#readme) - Terminal-based launcher and fuzzy finder for PowerShell.
