@@ -45,6 +45,7 @@ Install any module below with `Install-Module <Name>` (PowerShellGet) or `Instal
 
 ## Testing & Code Quality
 
+- [AzPolicyTest](https://github.com/TaoYang-Cloud/AzPolicyTest#readme) - Validates Azure Policy and Initiative definition JSON files against pre-defined Pester tests.
 - [M365DeprecationScanner](https://github.com/matejpaunovski/M365DeprecationScanner#readme) - Finds deprecated and retired Microsoft 365, Entra ID, and Azure PowerShell commands in scripts and suggests replacements, as a command, PSScriptAnalyzer rule, or GitHub Action.
 - [Pester](https://github.com/pester/Pester#readme) - BDD (Behaviour-Driven Development)-style test and mocking framework. Pester is the most widely used testing framework for PowerShell.
 - [PSRule](https://github.com/microsoft/PSRule#readme) - Validates infrastructure as code and objects against PowerShell-defined rules.
